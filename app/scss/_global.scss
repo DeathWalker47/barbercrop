@@ -1,0 +1,37 @@
+
+
+body,
+html{
+  height: 100%;
+}
+
+body{
+  color: $default;
+  @extend %roboto-400;
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  color: $white;
+  @extend %oswald-500;
+  text-transform: uppercase;
+}
