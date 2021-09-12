@@ -33,5 +33,22 @@ body{
 .title{
   color: $white;
   @extend %oswald-500;
+  font-size: 40px;
+  line-height: 52px;
   text-transform: uppercase;
+  z-index: 1;
+}
+
+.box-title{
+  z-index: 1;
+  position: relative;
+}
+.subtitle{
+  @extend %oswald-600;
+  font-size: 100px;
+  line-height: 120px;
+  color: $opacity;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: -1;
 }
