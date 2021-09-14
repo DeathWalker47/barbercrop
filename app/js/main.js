@@ -3,7 +3,7 @@ $(function(){
 });
 
 
-new Swiper('.swiper',{
+new Swiper('.top-slider',{
   loop:true,
   effect: 'fade',
   fadeEffect: {
@@ -19,4 +19,14 @@ new Swiper('.swiper',{
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+ });
+
+new Swiper('.reviews-slider',{
+  loop:true,
+  slidesPerView: 2,
+  speed: 1500,
+  /* navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }, */
  });

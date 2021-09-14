@@ -6,6 +6,7 @@ html{
 }
 
 body{
+  background-color: $bg;
   color: $default;
   @extend %roboto-400;
   font-size: 16px;
