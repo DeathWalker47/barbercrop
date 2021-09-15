@@ -1,5 +1,5 @@
 $(function(){
-  
+ 
 });
 
 
@@ -30,3 +30,10 @@ new Swiper('.reviews-slider',{
     prevEl: '.swiper-button-prev',
   }, */
  });
+
+ var mixer = mixitup('.gallery__cases', {
+  animation: {
+    effectsOut: 'fade translateY(-100%)'
+  }
+ });
+
