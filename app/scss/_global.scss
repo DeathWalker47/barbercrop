@@ -53,3 +53,39 @@ body{
   text-transform: uppercase;
   z-index: -1;
 }
+
+@media (max-width:1680px){
+  .subtitle{
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 576px){
+  .subtitle {
+    font-size: 65px;
+    line-height: 90px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 385px){
+  .title {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .subtitle {
+    font-size: 50px;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 360px){
+  .title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
