@@ -18,6 +18,10 @@ $bg:#202020;
   display: inline-block;
   cursor: pointer;
   border: none;
+  transition: all .3s linear;
+  &:hover{
+    background-color: rgb(180 0 0);
+  }
 }
 
 

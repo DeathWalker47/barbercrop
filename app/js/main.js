@@ -25,10 +25,12 @@ new Swiper('.reviews-slider',{
   loop:true,
   slidesPerView: 2,
   speed: 1500,
-  /* navigation: {
+  /* spaceBetween: 70, */
+  grabCursor: true,
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }, */
+  },
  });
 
  var mixer = mixitup('.gallery__cases', {
@@ -36,4 +38,6 @@ new Swiper('.reviews-slider',{
     effectsOut: 'fade translateY(-100%)'
   }
  });
+
+
 

@@ -356,6 +356,7 @@
   z-index: 1;
   &__img-link{
     width: 370px;
+    display: block;
     margin-bottom: 34px;
   }
   &__img{
@@ -614,15 +615,15 @@ margin-bottom: 35px;
   &__title{
     max-width: 400px;
     margin-bottom: 30px;
+    margin-bottom: -140px;
   }
 }
 
 .reviews-slider{
+  padding-top: 90px;
   &__item{
-    max-width: 530px;
+    max-width: 630px;
     width: 100%;
-    padding-left: 100px;
-    margin-right: 70px;
     position: relative;
     &::before{
       content: '';
@@ -631,13 +632,15 @@ margin-bottom: 35px;
       left: 0;
       width: 70px;
       height: 55px;
-      background-image: url('../images/icon/inst.svg');
+      background-image: url('../images/icon/bq.svg');
       background-repeat: no-repeat;
     }
   }
   &__text{
+    padding-left: 100px;
     min-height: 150px;
     overflow: auto;
+    max-width: 400px;
     margin-bottom: 5px;
   }
   &__name{
@@ -645,6 +648,24 @@ margin-bottom: 35px;
     line-height: 32px;
     text-transform: uppercase;
     color: $accent;
+    padding-left: 100px;
+    @extend %oswald-500;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    width: 50px;
+    top: 10px;
+    &::after{
+      display: none;
+    }
+    &:hover{
+      svg path{
+        fill: $accent;
+      }
+    }
+  }
+  .swiper-button-prev{
+    left: auto;
+    right: 80px;
   }
 }
 
