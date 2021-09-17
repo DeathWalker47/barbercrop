@@ -587,6 +587,9 @@ margin-bottom: 35px;
   &__subtitle{
     bottom: -72px;
     left: 92px;
+    &--none{
+      display: none;
+    }
   }
   &__images{
     display: flex;
@@ -844,16 +847,16 @@ margin-bottom: 35px;
   }
   &__cases {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: 40px;
   }
   &__cases-item {
     margin-bottom: 30px;
-   /*  &:nth-child(even){
+    &:nth-child(even){
       margin-left: 30px;
-    } */
+    }
   }
   &__cases-link {
     display: block;
@@ -866,7 +869,7 @@ margin-bottom: 35px;
   &__prev,
   &__next {
     background-color: $accent;
-    padding: 14px 20px;
+    padding: 16px 20px 14px;
     text-transform: uppercase;
     color: $white;
     font-size: 14px;

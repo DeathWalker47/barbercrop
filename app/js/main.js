@@ -23,14 +23,20 @@ new Swiper('.top-slider',{
 
 new Swiper('.reviews-slider',{
   loop:true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   speed: 1500,
-  /* spaceBetween: 70, */
+  spaceBetween: 20,
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+  }
  });
 
  var mixer = mixitup('.gallery__cases', {
