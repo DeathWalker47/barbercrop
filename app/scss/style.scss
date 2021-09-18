@@ -994,10 +994,10 @@ margin-bottom: 35px;
     padding: 11px 18px;
     color: $white;
     outline: none;
-    border-radius: 0px;
-    -webkit-border-radius:0px;
-    -moz-appearance: none;
+    border-radius: 1px;
+    -webkit-border-radius:1px;
     -webkit-appearance: none;
+    -moz-appearance: none;
     &::placeholder{
       color: $white;
       font-size: 14px;
