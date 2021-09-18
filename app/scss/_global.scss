@@ -4,7 +4,9 @@ body,
 html{
   height: 100%;
 }
-
+.body-active{
+  overflow: hidden;
+}
 body{
   background-color: $bg;
   color: $default;
@@ -23,6 +25,10 @@ body{
 
 .main{
   flex-grow: 1;
+  transition: all .3s linear;
+  &--active{
+    transform: translateX(60%);
+  }
 }
 
 .container{
