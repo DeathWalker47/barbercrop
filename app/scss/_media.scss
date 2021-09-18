@@ -459,6 +459,9 @@
 }
 
 @media (max-width:576px) {
+  .top-slider__item {
+    height: calc(100vh - 94px);
+  }
   .top-slider__item::before {
     content: '';
     position: absolute;
@@ -817,6 +820,18 @@
     &__form-textarea {
       height: 100px;
       margin-bottom: 25px;
+    }
+  }
+  .scroll-top {
+    bottom: 16px;
+    right: 16px;
+    width: 35px;
+    height: 35px;
+    svg{
+      width: 20px;
+    }
+    &--active{
+      bottom: 16px;
     }
   }
 }

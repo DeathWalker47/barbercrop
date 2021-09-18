@@ -1,3 +1,19 @@
+var offset = 200;
+ var duration = 400;
+ $(window).on('scroll', function() {
+   if ($(this).scrollTop() > offset) {
+    $('.scroll-top').addClass('scroll-top--active');
+   } else {
+    $('.scroll-top').removeClass('scroll-top--active');
+   }
+ });       
+ $('.scroll-top').on('click', function(event) {
+   event.preventDefault();
+   $('html, body').animate({scrollTop: 0}, duration);
+   return false;
+ })
+
+
 $(function(){
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
@@ -42,12 +58,4 @@ new Swiper('.reviews-slider',{
     },
   }
  });
-
- var mixer = mixitup('.gallery__cases', {
-  animation: {
-    effectsOut: 'fade translateY(-100%)'
-  }
- });
-
-
-
+ 
