@@ -823,15 +823,14 @@
     }
   }
   .scroll-top {
-    bottom: 16px;
-    right: 16px;
+    right: 20px;
     width: 35px;
     height: 35px;
     svg{
       width: 20px;
     }
     &--active{
-      bottom: 16px;
+      bottom: 20px;
     }
   }
 }
