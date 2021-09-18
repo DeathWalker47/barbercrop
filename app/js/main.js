@@ -59,3 +59,8 @@ new Swiper('.reviews-slider',{
   }
  });
  
+ var mixer = mixitup('.gallery__cases', {
+  animation: {
+    effectsOut: 'fade translateY(-100%)'
+  }
+ });
