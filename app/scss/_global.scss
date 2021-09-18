@@ -3,6 +3,9 @@
 body,
 html{
   height: 100%;
+  ::-webkit-scrollbar { width: 8px; height: 8px;} //ширина и высота скролла
+  ::-webkit-scrollbar-track-piece { background-color: #fff;}//цвет полосы
+  ::-webkit-scrollbar-thumb { height: 50px; background-color: $accent; border-radius: 0;}/* ползунок скроллбара */
 }
 .body-active{
   overflow: hidden;
