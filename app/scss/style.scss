@@ -1020,6 +1020,33 @@ margin-bottom: 35px;
   }
 }
 
+.error{
+  padding: 144px 0 28px;
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__content{
+    max-width: 470px;
+    margin-right: 79px;
+  }
+  &__title{
+    margin-bottom: 18px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 48px;
+  }
+  &__link{
+    @extend %btn;
+  }
+  &__number{
+    color: #C4C4C4;
+    font-size: 400px;
+    @extend %oswald-600;
+  }
+}
 
 .scroll-top {
   background: rgba($color: $opacity, $alpha: .8);

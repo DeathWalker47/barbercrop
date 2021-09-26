@@ -182,6 +182,17 @@
       margin-bottom: 30px;
     }
   }
+  .error{
+    &__inner{
+      justify-content: space-between;
+    }
+    &__content{
+      margin-right: 0;
+    }
+    &__number {
+      font-size: 280px;
+    }
+  }
 }
 
 @media (max-width:992px) {
@@ -322,6 +333,21 @@
 
   .recent-posts {
     padding: 80px 0 20px;
+  }
+  .error{
+    padding: 40px 0;
+    &__inner{
+      flex-direction: column;
+    }
+    &__content{
+      margin-right: 0;
+    }
+    &__number {
+      order: -1;
+      line-height: 100%;
+      font-size: 200px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -831,6 +857,18 @@
     }
     &--active{
       bottom: 20px;
+    }
+  }
+  .error{
+    &__title{
+      margin-bottom: 10px;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__number {
+      font-size: 130px;
+      margin-bottom: 20px;
     }
   }
 }
