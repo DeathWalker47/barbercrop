@@ -509,6 +509,7 @@ margin-bottom: 35px;
   }
   &__btn{
     @extend %btn;
+    margin-right: 5px;
   }
   
 }
@@ -876,16 +877,10 @@ margin-bottom: 35px;
   }
   &__cases {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    grid-gap: 30px;
     overflow: hidden;
     margin-bottom: 40px;
-  }
-  &__cases-item {
-    margin-bottom: 30px;
-    &:nth-child(even){
-      margin-left: 30px;
-    }
   }
   &__cases-link {
     display: block;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Barbercrop</title>
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header">
@@ -38,7 +36,7 @@
                   <a class="menu__link" href="gallery.html">галерея</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link  menu__link--active" href="contact.html">контакты</a>
+                  <a class="menu__link" href="contact.html">контакты</a>
                 </li>
                 <li class="menu__item">
                   <button class="header__btn" type="button">заказать</button>
@@ -51,79 +49,23 @@
       </div>
     </header>
     <main class="main">
-      <section class="contact">
+      <section class="error">
         <div class="container">
-          <div class="contact__box-title box-title">
-            <h2 class="contact__title title">
-              Оформи заявку на сеанс
-            </h2>
-            <span class="contact__subtitle subtitle">
-              Контакты
-            </span>
-          </div>
-          <div class="contact__inner">
-            <div class="contact__info">
-              <div class="contact__item">
-                <h3 class="contact__info-title title">
-                  EMAIL
-                </h3>
-                <a class="contact__email" href="mailto:barbercrop@example.com">
-                  barbercrop@example.com
-                </a>
-              </div>
-              <div class="contact__item">
-                <h3 class="contact__info-title title">
-                  Адрес
-                </h3>
-                <p class="contact__address">
-                  Москва, Проспект Мира 42 Б.
-                </p>
-              </div>
-              <div class="contact__item">
-                <h3 class="contact__info-title title">
-                  Телефон
-                </h3>
-                <a class="contact__tel" href="tel:+89093984411">
-                  +8 909 398 44 11
-                </a>
-                <a class="contact__tel" href="tel:+89083013312">
-                  +8 908 301 33 12
-                </a>
-              </div>
+          <div class="error__inner">
+            <div class="error__content">
+              <h2 class="error__title title">
+                Страница не найдена
+              </h2>
+              <p class="error__text">
+                К сожалению, эта странница не доступна на данный момент времени. Попробуйте зайти сюда позже.
+              </p>
+              <a href="index.html" class="error__link">
+                На главную
+              </a>
             </div>
-            <form class="contact__form" action="#" >
-              <!-- Hidden Required Fields -->
-              <input type="hidden" name="project_name" value="Site Name">
-              <input type="hidden" name="admin_email" value="admin@mail.com">
-              <input type="hidden" name="form_subject" value="Form Subject">
-              <!-- END Hidden Required Fields -->
-              <div class="contact__form-items">
-                <div class="contact__form-item">
-                  <h4 class="contact__form-title">Имя или псевдоним</h4>
-                  <input class="contact__form-input contact__form-input" type="text" placeholder="Haircut" required>
-                </div>
-                <div class="contact__form-item">
-                  <h4 class="contact__form-title">ВЫБЕРИТЕ УСЛУГУ *</h4>
-                  <input class="contact__form-input" type="text" placeholder="Haircut" required>
-                </div>
-                <div class="contact__form-item">
-                  <h4 class="contact__form-title">Укажите ваш номер *</h4>
-                  <input class="contact__form-input contact__form-input" type="number" placeholder="Ваш телефон" required>
-                </div>
-                <div class="contact__form-item">
-                  <h4 class="contact__form-title">ВЫБЕРИТЕ удобную для вас дату</h4>
-                  <input class="contact__form-input" type="date" placeholder="dd.mm.yyyy" required>
-                </div>
-                 <div class="contact__form-item--textarea">
-                   <h4 class="contact__form-title">Сообщение</h4>
-                   <textarea class="contact__form-textarea" placeholder="Напишите сообщение">
-                   </textarea>
-                 </div>
-              </div>
-                <button class="contact__form-btn" type="submit">
-                  book now
-                </button>
-            </form>
+            <p class="error__number">
+              404
+            </p>
           </div>
         </div>
       </section>
@@ -191,5 +133,4 @@
   </div>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>
